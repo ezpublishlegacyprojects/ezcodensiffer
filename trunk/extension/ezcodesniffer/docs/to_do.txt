@@ -1,5 +1,7 @@
 Coding standard:
 
+- add tests for deprecated eZP 3 stuff (suach as using & for ezdb, ezini)
+
 - ...
 
 - test for GLOB_BRACES, as it's not supported on solaris
