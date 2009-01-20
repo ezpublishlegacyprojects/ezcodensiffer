@@ -1,0 +1,11 @@
+Coding standard:
+
+- ...
+
+- test for GLOB_BRACES, as it's not supported on solaris
+- test for flock - pbls on windoze
+
+
+Other:
+
+- create a module / views to run the codesniffer on current ez install / a file / an extension and display results
