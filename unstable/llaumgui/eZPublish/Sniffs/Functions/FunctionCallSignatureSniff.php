@@ -125,7 +125,7 @@ class eZPublish_Sniffs_Functions_FunctionCallSignatureSniff implements PHP_CodeS
      */
     public function processSingleLineCall(PHP_CodeSniffer_File $phpcsFile, $stackPtr, $openBracket, $tokens)
     {
-        if ($tokens[($openBracket + 1)]['code'] !== T_WHITESPACE) {
+        if ($tokens[($openBracket + 1)]['code'] !== T_CLOSE_PARENTHESIS && $tokens[($openBracket + 1)]['code'] !== T_WHITESPACE) {
             // Checking this: $value = my_function([*]...).
             $error = 'Space after opening parenthesis of function call is mandatory';
             $phpcsFile->addError($error, $stackPtr);

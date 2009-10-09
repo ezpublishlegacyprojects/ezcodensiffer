@@ -59,7 +59,7 @@ class eZPublish_Sniffs_ControlStructures_ControlSignatureSniff extends PHP_CodeS
                 'doEOL...{EOL...}EOL...while (...);EOL',
                 'while (...)EOL...{EOL',
                 'for (...)EOL...{EOL',
-                'if (...)EOL...{EOL',
+                'if.(...)EOL...{EOL',
                 'foreach (...)EOL...{EOL',
                 '}EOL...else if (...)EOL...{EOL',
                 '}EOL...elseif (...)EOL...{EOL',

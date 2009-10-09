@@ -59,12 +59,14 @@ class PHP_CodeSniffer_Standards_eZPublish_eZPublishCodingStandard extends PHP_Co
     {
         return array(
                 'PEAR/Sniffs/ControlStructures',
-                'PEAR/Sniffs/Commenting/ClassCommentSniff.php',
-                'PEAR/Sniffs/Commenting/FileCommentSniff.php',
-                'PEAR/Sniffs/Commenting/FunctionCommentSniff.php',
+                'PEAR/Sniffs/Commenting',
                 'PEAR/Sniffs/Files/LineLengthSniff.php',
                 'PEAR/Sniffs/Functions/FunctionCallSignatureSniff.php',
-                'PEAR/Sniffs/NamingConventions/ValidClassNameSniff.php'
+                'PEAR/Sniffs/NamingConventions/ValidClassNameSniff.php',
+
+            /* tempory exclude */
+                'PEAR/Sniffs/WhiteSpace/ScopeIndentSniff.php',
+                'PEAR/Sniffs/WhiteSpace/ScopeClosingBraceSniff.php'
                );
 
     }//end getExcludedSniffs()
